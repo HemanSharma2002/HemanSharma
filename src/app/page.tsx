@@ -64,13 +64,13 @@ export default function Home() {
           </div>
         </div>
         <div className=" w-5/6 md:w-4/5 p-4 h-full overflow-y-scroll  flex flex-col gap-3">
-          <div className=" h-60 rounded-md bg-[url('https://i.postimg.cc/4ycLgyXj/bg-Potfolio.png')] flex items-center gap-5 p-2">
-            <div className=" flex flex-row md:justify-between gap-2 w-full md:px-10">
+          <div className=" h-60 rounded-md  flex items-center gap-5 p-2 bg-slate-800 w-full">
+            <div className=" flex flex-row justify-between gap-2 w-full md:px-10">
               <div className=" h-36 w-36">
                 <img className=" w-full h-full rounded-full" src="https://avatars.githubusercontent.com/u/101355643?v=4" alt="Github image" />
               </div>
               <div className=" pt-10  text-slate-800 font-bold">
-                <p className=" text-2xl">Heman Sharma</p>
+                <p className=" text-2xl text-white">Heman Sharma</p>
                 
               </div>
             </div>
