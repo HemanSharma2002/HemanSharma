@@ -12,7 +12,7 @@ export default function Home() {
           <p className=" h-5 w-5 text-green-500 rounded-full"><BoxModelIcon className=" w-[25px] h-[25px]" /></p>
         </div>
         <div>
-          <Link href={`https://www.instagram.com/heman.sharma_/?igsh=MXFubGltcnMzdHV0dg%3D%3D`} className=" flex flex-row gap-3 bg-green-500 rounded-md p-1 px-3">
+          <Link href={`https://mail.google.com/mail/u/0/?to=hemansharma2002@gmail.com&fs=1&tf=cm`} className=" flex flex-row gap-3 bg-green-500 rounded-md p-1 px-3">
             <AvatarIcon className=" w-[25px] h-[25px]" />
             <p>Contact</p>
           </Link>
@@ -21,7 +21,7 @@ export default function Home() {
       <div className=" flex flex-row h-[900px]">
         <div className=" w-1/6 md:w-1/5 p-3 flex flex-col gap-3 ">
           <div className=" p-2 bg-slate-800 h-full rounded-md">
-            <div className=" flex flex-col ml-3">
+            <div className=" flex flex-col md:ml-3">
               <Link href={`#`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
                 <HomeIcon className=" w-[25px] h-[25px]" />
                 <p className=" hidden md:block">Home</p>
@@ -40,7 +40,7 @@ export default function Home() {
               </Link>
             </div>
             <p className=" text-lg md:block hidden">Socials</p>
-            <div className=" flex flex-col ml-3">
+            <div className=" flex flex-col md:ml-3">
               <Link href={`https://www.instagram.com/heman.sharma_/?igsh=MXFubGltcnMzdHV0dg%3D%3D`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
                 <InstagramLogoIcon className=" w-[25px] h-[25px] text-purple-800" />
                 <p className=" hidden md:block">Instagram</p>
@@ -71,10 +71,7 @@ export default function Home() {
               </div>
               <div className=" pt-10  text-slate-800 font-bold">
                 <p className=" text-2xl">Heman Sharma</p>
-                <div className=" flex flex-row gap-4">
-                  
-                  <p>hemansharma2002@gmail.com</p>
-                </div>
+                
               </div>
             </div>
           </div>
