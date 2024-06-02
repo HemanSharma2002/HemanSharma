@@ -1,113 +1,143 @@
+import Card from "@/components/Card";
+import { AvatarIcon, BoxIcon, BoxModelIcon, ChevronRightIcon, CodeIcon, GitHubLogoIcon, HomeIcon, InstagramLogoIcon, LinkedInLogoIcon, VideoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className=" text-white bg-slate-900">
+      <nav className=" p-2 flex flex-row justify-between px-8">
+        <div className=" flex flex-row gap-3">
+          <p className=" h-5 w-5 text-green-500 rounded-full"><BoxModelIcon className=" w-[25px] h-[25px]" /></p>
+          <p className=" h-5 w-5 text-green-500 rounded-full"><BoxModelIcon className=" w-[25px] h-[25px]" /></p>
+        </div>
+        <div>
+          <Link href={`https://www.instagram.com/heman.sharma_/?igsh=MXFubGltcnMzdHV0dg%3D%3D`} className=" flex flex-row gap-3 bg-green-500 rounded-md p-1 px-3">
+            <AvatarIcon className=" w-[25px] h-[25px]" />
+            <p>Contact</p>
+          </Link>
+        </div>
+      </nav>
+      <div className=" flex flex-row h-[900px]">
+        <div className=" w-1/6 md:w-1/5 p-3 flex flex-col gap-3 ">
+          <div className=" p-2 bg-slate-800 h-full rounded-md">
+            <div className=" flex flex-col ml-3">
+              <Link href={`#`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <HomeIcon className=" w-[25px] h-[25px]" />
+                <p className=" hidden md:block">Home</p>
+              </Link>
+              <Link href={`https://github.com/HemanSharma2002`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <CodeIcon className=" w-[25px] h-[25px]" />
+                <p className=" hidden md:block">Snipets</p>
+              </Link>
+              <Link href={`#`}  className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <VideoIcon className=" w-[25px] h-[25px]" />
+                <p className=" hidden md:block">Videos</p>
+              </Link>
+              <Link href={`https://leetcode.com/u/HemanSharma/`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <BoxIcon className=" w-[25px] h-[25px]" />
+                <p className=" hidden md:block">Trending</p>
+              </Link>
+            </div>
+            <p className=" text-lg md:block hidden">Socials</p>
+            <div className=" flex flex-col ml-3">
+              <Link href={`https://www.instagram.com/heman.sharma_/?igsh=MXFubGltcnMzdHV0dg%3D%3D`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <InstagramLogoIcon className=" w-[25px] h-[25px] text-purple-800" />
+                <p className=" hidden md:block">Instagram</p>
+              </Link>
+              <Link href={`https://github.com/HemanSharma2002`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <GitHubLogoIcon className=" w-[25px] h-[25px] " />
+                <p className=" hidden md:block">Github</p>
+              </Link>
+              <Link href={`https://www.linkedin.com/in/heman-sharma-6a60b0203/`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <LinkedInLogoIcon className=" w-[25px] h-[25px] text-blue-500" />
+                <p className=" hidden md:block">Linkedin</p>
+              </Link>
+              <Link href={`https://leetcode.com/u/HemanSharma/`} className=" flex flex-row gap-4 pt-3 pb-3 hover:pt-2 hover:pb-4 duration-150">
+                <CodeIcon className=" w-[25px] h-[25px] text-yellow-400" />
+                <p className=" hidden md:block">Leetcode</p>
+              </Link>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div className=" w-5/6 md:w-4/5 p-4 h-full overflow-y-scroll  flex flex-col gap-3">
+          <div className=" h-60 rounded-md bg-[url('https://i.postimg.cc/4ycLgyXj/bg-Potfolio.png')] flex items-center gap-5 p-2">
+            <div className=" flex flex-row md:justify-between gap-2 w-full md:px-10">
+              <div className=" h-36 w-36">
+                <img className=" w-full h-full rounded-full" src="https://avatars.githubusercontent.com/u/101355643?v=4" alt="Github image" />
+              </div>
+              <div className=" pt-10  text-slate-800 font-bold">
+                <p className=" text-2xl">Heman Sharma</p>
+                <div className=" flex flex-row gap-4">
+                  
+                  <p>hemansharma2002@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* projects */}
+          <p className=" text-2xl ">Worked on</p>
+          <div className=" p-3 flex flex-wrap gap-12">
+            <Card title="Spring Store" frontend="Next JS , Tailwind CSS , Material UI ,Shad CN & Typescript" backend=" Spring Boot & My SQL" image="https://i.postimg.cc/MTF0TKYq/Spring-Store-Logo.png" frontendLink="https://github.com/HemanSharma2002/EcommerseFrontEnd-NextJS" backendLink="https://github.com/HemanSharma2002/Ecom-Backend-Java-SpringBoot" />
+            <Card title="Anynomus Message" frontend="Next JS , ZOD , Shad CN , Tailwind CSS & Typescript" backend="Next JS & Mongoo DB" image="https://cdn-icons-png.flaticon.com/512/1990/1990486.png" frontendLink="https://github.com/HemanSharma2002/AnynomusMessage" backendLink="https://github.com/HemanSharma2002/AnynomusMessage"/>
+            <Card image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGsF4YHIvQyou0IldLPWzDVihV03k0i-Pag&s" title="Multiuser Todo Application" frontend="React JS & Tailwind CSS" backend="My SQL , Spring Boot & JWT" />
+          </div>
+          {/* skills */}
+          <p className=" text-2xl ">Skills</p>
+          <div className=" flex flex-wrap gap-3 justify-center md:justify-start">
+            <div className=" flex flex-col bg-slate-800 rounded-md w-56 h-60 p-3 gap-6 text-gray-400">
+              <p className=" text-lg">Front End</p>
+              <div className=" flex flex-wrap gap-2 text-sm">
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">React JS</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Next JS</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Tailwind CSS</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md">Javascript</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Typescript</p>
+              </div>
+            </div>
+            <div className=" flex flex-col bg-slate-800 rounded-md w-56 h-60 p-3 gap-6 text-gray-400">
+              <p className=" text-lg">Back End</p>
+              <div className=" flex flex-wrap gap-3 text-sm">
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Spring Boot</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Next JS</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Hibernate</p>
+              </div>
+            </div>
+            <div className=" flex flex-col bg-slate-800 rounded-md w-56 h-60 p-3 gap-6 text-gray-400">
+              <p className=" text-lg">Database</p>
+              <div className=" flex flex-wrap gap-3 text-sm">
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">My SQL</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md">Postgress</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md">Mongoo DB</p>
+              </div>
+            </div>
+            <div className=" flex flex-col bg-slate-800 rounded-md w-56 h-60 p-3 gap-6 text-gray-400">
+              <p className=" text-lg">Devops</p>
+              <div className=" flex flex-wrap gap-3 text-sm">
+                <p className=" bg-slate-950  p-2 px-3 rounded-md">Docker</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">GIT</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md">AWS</p>
+                <p className=" bg-slate-950  p-2 px-3 rounded-md border-2 border-yellow-600">Vercel</p>
+              </div>
+            </div>
+            <div className=" flex flex-col bg-slate-800 rounded-md w-56 min-h-60 p-3 gap-6 text-gray-400">
+              <p className=" text-lg">More Projects</p>
+              <div className=" flex flex-wrap gap-3 text-sm">
+                <div className=" bg-slate-950 py-3  p-2 px-3 rounded-md   flex flex-row gap-2 items-center">Password Generator <ChevronRightIcon/></div>
+                <div className=" bg-slate-950 py-3  p-2 px-3 rounded-md   flex flex-row gap-2 items-center">Color Change Application<ChevronRightIcon/></div>
+                <div className=" bg-slate-950 py-3  p-2 px-3 rounded-md   flex flex-row gap-2 items-center">Currency Convertor<ChevronRightIcon/></div>
+                <div className=" bg-slate-950 py-3  p-2 px-3 rounded-md   flex flex-row gap-2 items-center">Others<ChevronRightIcon/></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            
+          </div>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </main >
   );
 }
